@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Hello User</h1>
+    <h1 th:text="|name = ${user.name}|"></h1>
+    <h1 th:text="|age = ${user.age}|"></h1>
+</body>
+</html>
