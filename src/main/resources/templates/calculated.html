@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Results</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>Tabulate results</h1>
+<h2 th:text="|Left border = ${results.leftBorder}|"></h2>
+<h2 th:text="|Right border = ${results.rightBorder}|"></h2>
+<h2 th:text="|Step = ${results.step}|"></h2>
+<h2 th:text="|Step number = ${results.stepNumb}|"></h2>
+<h2 th:text="|Max value of f(x) = ${results.maxValue}|"></h2>
+<h2 th:text="|x for max f(x) = ${results.getXForMax()}|"></h2>
+<h2 th:text="|Index of max f(x) = ${results.indexOfMax}|"></h2>
+<h2 th:text="|Min value of f(x) = ${results.minValue}|"></h2>
+<h2 th:text="|x for min f(x) = ${results.getXForMin()}|"></h2>
+<h2 th:text="|Index of min f(x) = ${results.indexOfMin}|"></h2>
+<h2 th:text="|Summ f(x) = ${results.summ}|"></h2>
+<h2 th:text="|Average f(x) = ${results.average}|"></h2>
+<form action="input" method="get">
+  <input type="submit" value="Go back">
+</form>
+</body>
+</html>
